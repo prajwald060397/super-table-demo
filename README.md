@@ -1,27 +1,15 @@
-# SuperTableDemo
+SuperTable – Reusable PrimeNG Table Wrapper (Angular 18)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This project demonstrates a reusable superTable component built with Angular 18 (standalone) and PrimeNG p-table, along with a localhost playground to showcase different table features in isolation.
 
-## Development server
+The goal is to provide a config-driven wrapper over PrimeNG p-table with a consistent API and clean architecture.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ⚠️ Note on PrimeNG Version
 
-## Code scaffolding
+The original requirement mentioned PrimeNG v19.  
+During implementation, PrimeNG v19 was found to have compatibility issues with Angular 18’s
+application builder related to the `provideAppInitializer` API.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To ensure a stable build and focus on the component architecture and functionality,
+PrimeNG v18 is used in this project. PrimeNG v18 fully supports Angular 18,
+standalone components, and all required `p-table` features demonstrated here.

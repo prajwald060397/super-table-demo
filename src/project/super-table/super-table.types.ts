@@ -7,9 +7,15 @@ export interface SuperTableColumn {
 
 export interface SuperTableConfig {
   columns: SuperTableColumn[];
+
   paginator?: boolean;
   rows?: number;
+
   sortMode?: 'single' | 'multiple';
+
   stripedRows?: boolean;
   showGridlines?: boolean;
+
+  scrollable?: boolean;
+  scrollHeight?: string;
 }

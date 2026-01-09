@@ -6,8 +6,6 @@
   [sortMode]="config.sortMode ?? 'single'"
   [stripedRows]="config.stripedRows"
   [showGridlines]="config.showGridlines"
-  (onPage)="page.emit($event)"
-  (onSort)="sort.emit($event)"
 >
 
   <ng-template pTemplate="header" let-columns>

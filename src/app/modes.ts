@@ -1,4 +1,11 @@
+import { SuperTableConfig } from '../project/super-table';
 import { customers } from './data';
+
+export interface Mode {
+  label: string;
+  config: SuperTableConfig;
+  data: any[];
+}
 
 export const MODES = [
   {
