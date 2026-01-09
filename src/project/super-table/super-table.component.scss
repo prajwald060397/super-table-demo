@@ -1,0 +1,7 @@
+:host ::ng-deep .p-datatable {
+  border-radius: 8px;
+}
+
+:host ::ng-deep .p-datatable-tbody > tr:nth-child(even) {
+  background-color: var(--surface-ground);
+}

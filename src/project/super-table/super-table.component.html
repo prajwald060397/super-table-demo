@@ -1,0 +1,31 @@
+<p-table
+  [value]="data"
+  [columns]="config.columns"
+  [paginator]="config.paginator"
+  [rows]="config.rows"
+  [sortMode]="config.sortMode ?? 'single'"
+  [stripedRows]="config.stripedRows"
+  [showGridlines]="config.showGridlines"
+  (onPage)="page.emit($event)"
+  (onSort)="sort.emit($event)"
+>
+
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns"
+          [pSortableColumn]="col.sortable ? col.field : null">
+        {{ col.header }}
+        <p-sortIcon *ngIf="col.sortable" [field]="col.field"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-row let-columns="columns">
+    <tr>
+      <td *ngFor="let col of columns">
+        {{ row[col.field] }}
+      </td>
+    </tr>
+  </ng-template>
+
+</p-table>

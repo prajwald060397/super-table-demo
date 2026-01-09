@@ -1,0 +1,18 @@
+<div class="layout">
+  <aside>
+    <ul>
+      <li *ngFor="let mode of modes"
+          (click)="selectMode(mode)">
+        {{ mode.label }}
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <superTable
+      *ngIf="activeMode"
+      [config]="activeMode.config"
+      [data]="activeMode.data">
+    </superTable>
+  </main>
+</div>
