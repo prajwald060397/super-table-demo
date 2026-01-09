@@ -6,7 +6,7 @@ import { SuperTableComponent } from '../project/super-table/super-table.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SuperTableComponent],
+  imports: [CommonModule, SuperTableComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

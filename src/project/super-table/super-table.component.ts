@@ -6,7 +6,7 @@ import { SuperTableConfig } from './super-table.types';
 @Component({
   selector: 'superTable',
   standalone: true,
-  imports: [TableModule],
+  imports: [CommonModule, TableModule],
   templateUrl: './super-table.component.html',
   styleUrl: './super-table.component.scss'
 })
